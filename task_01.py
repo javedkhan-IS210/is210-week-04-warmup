@@ -16,8 +16,13 @@ def know_what_i_mean(wink, numwink=2):
          retstr optional(str): Arg to concatenate optional parameters with a
          string and comma,then inserts winks and nudges. 
     Returns:
-         str: concatenates all three optional parameters inserting winks and
-         nudges into a string. 
+         str: concatenates all three arguments with commas  winks and
+         nudges multiplied by numwink value.
+
+    Examples:
+         >>>>know_what_i_mean'
+         'Know what I mean>? wink wink, nudge nudge' 
+    
     """
     winks = (wink * numwink).strip()
     nudges = ('nudge ' * numwink).strip()
